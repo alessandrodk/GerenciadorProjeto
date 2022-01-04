@@ -6,6 +6,7 @@
 @foreach (var item in projetos)
 {
    <div class="col-3 p-1" style="
+    vertical-align:middle;
     height: 200px;
     width: 200px;
     margin:10px;
@@ -25,27 +26,24 @@
 
 @code {
     List<string> projetos = new List<string>();
-
-
-    public void CarregarLista()
+        
+    protected override void OnInitialized()
     {
-        projetos.Add("1");
-        projetos.Add("2");
-        projetos.Add("3");
+        projetos.Add("CARTOGRAFIA");
+        projetos.Add("DESENVOLVIMENTO");
+        projetos.Add("SUPORTE");
         projetos.Add("4");
         projetos.Add("5");
         projetos.Add("6");
         projetos.Add("7");
         projetos.Add("8");
         projetos.Add("9");
-        projetos.Add("1");
-        projetos.Add("1");
-        projetos.Add("1");
-        projetos.Add("1");
-        projetos.Add("1");
-        projetos.Add("1");
-        projetos.Add("1");
-        projetos.Add("1");
+      
+    }
+
+    public void CarregarLista()
+    {
+        projetos.Clear();
     }
 
     

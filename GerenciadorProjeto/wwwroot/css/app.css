@@ -1,5 +1,14 @@
 ﻿@import url('open-iconic/font/css/open-iconic-bootstrap.min.css');
 
+
+.card-project {
+    height: 200px;
+    width: 200px;
+    margin-top: 11px;
+    border-radius: 0px 31px 0px 26px;
+    background-color: white;
+    box-shadow: 0 0 1em #7e7d76;
+}
 html, body {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }

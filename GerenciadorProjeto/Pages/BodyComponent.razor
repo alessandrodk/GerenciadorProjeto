@@ -1,14 +1,53 @@
-﻿<div style="
+﻿
+<button @onclick="CarregarLista">Carregar</button>
+<div class="container">
+      <div class="row col-12">
+
+@foreach (var item in projetos)
+{
+   <div class="col-3 p-1" style="
     height: 200px;
     width: 200px;
+    margin:10px;
     margin-top: 11px;
     border-radius: 0px 31px 0px 26px;
     background-color: white;
     box-shadow: 0 0 1em #7e7d76;
 ">
-
+    @item
+</div>
+    
+}</div>
+  </div>
+<div class="card-project">
 </div>
 
+
 @code {
+    List<string> projetos = new List<string>();
+
+
+    public void CarregarLista()
+    {
+        projetos.Add("1");
+        projetos.Add("2");
+        projetos.Add("3");
+        projetos.Add("4");
+        projetos.Add("5");
+        projetos.Add("6");
+        projetos.Add("7");
+        projetos.Add("8");
+        projetos.Add("9");
+        projetos.Add("1");
+        projetos.Add("1");
+        projetos.Add("1");
+        projetos.Add("1");
+        projetos.Add("1");
+        projetos.Add("1");
+        projetos.Add("1");
+        projetos.Add("1");
+    }
+
+    
 
 }
